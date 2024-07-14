@@ -70,18 +70,19 @@ main {
 }
 
 .weather-app-temperature {
-  font-size: 75px;
+  font-size: 65px;
   font-weight: 500;
   color: #77529e;
-  margin-left: 10px;
+  line-height: 90px;
+  margin-left: 8px;
 }
 .weather-app-icon {
-  font-size: 45px;
-  margin-top: 25px;
+  width: 90px;
+  height: 90px;
 }
 
 .weather-app-unit {
-  font-size: 20px;
+  font-size: 18px;
   margin-top: 18px;
   color: #77529e;
 }
