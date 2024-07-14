@@ -18,12 +18,13 @@
   <body>
     <div class="weather-app">
       <header>
-        <form class="search-form">
+        <form class="search-form" id="search-form">
           <input
             type="search"
             placeholder="What is Tempestas' weather mood at your location...!"
             required
             class="search-form-input"
+            id="search-form-input"
           />
           <input type="submit" value="Tell me!" class="search-form-button" />
         </form>
@@ -32,7 +33,7 @@
       <main>
         <div class="weather-app-data">
           <div>
-            <h1 class="weather-app-city">London</h1>
+            <h1 class="weather-app-city" id="city">London</h1>
             <p class="weather-app-details">
               Sunday 14:49, cloudy
               <br />
@@ -66,5 +67,6 @@
         >
       </footer>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
