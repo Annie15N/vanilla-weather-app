@@ -3,48 +3,61 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,400;1,200&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/style.css" />
     <title>Tempestas - Weather App</title>
   </head>
 
   <body>
-    <header>
-      <form>
-        <input
-          type="search"
-          placeholder="Search for Tempestas' current weather mood, if you dare!"
-          required
-        />
-        <input type="submit" value="I dare!" />
-      </form>
-    </header>
+    <div class="weather-app">
+      <header>
+        <form>
+          <input
+            type="search"
+            placeholder="Search for Tempestas' current weather mood, if you dare!"
+            required
+          />
+          <input type="submit" value="I dare!" />
+        </form>
+      </header>
 
-    <main>
-      <div>
-        <h1>London</h1>
-        <p>
-          Sunday 14:49, cloudy
-          <br />
-          Humidity: 66%, Wind: 3.13km/h
-        </p>
-      </div>
-      <div>🌤️ 16°C</div>
-    </main>
+      <main>
+        <div>
+          <h1>London</h1>
+          <p>
+            Sunday 14:49, cloudy
+            <br />
+            Humidity: 66%, Wind: 3.13km/h
+          </p>
+        </div>
+        <div>🌤️ 16°C</div>
+      </main>
 
-    <footer>
-      This project was built by
-      <a href="https://github.com/Annie15N" target="_blank">Annie Nelson</a> 🫢
-      <br />
-      The open source code can be found on
-      <a href="https://github.com/Annie15N/vanilla-weather-app" target="_blank"
-        >GitHub</a
-      >
-      and it is hosted on
-      <a
-        href="https://tempestas-weather-predictor.netlify.app/"
-        target="_blank"
-      >
-        Netlify</a
-      >
-    </footer>
+      <footer>
+        This project was built by
+        <a href="https://github.com/Annie15N" target="_blank">Annie Nelson</a> 🫢
+        <br />
+        The open source code can be found on
+        <a
+          href="https://github.com/Annie15N/vanilla-weather-app"
+          target="_blank"
+          >GitHub</a
+        >
+        and it is hosted on
+        <a
+          href="https://tempestas-weather-predictor.netlify.app/"
+          target="_blank"
+        >
+          Netlify</a
+        >
+      </footer>
+    </div>
   </body>
 </html>
