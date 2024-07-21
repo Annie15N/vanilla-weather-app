@@ -19,8 +19,6 @@ function refreshWeather(response) {
   let date = new Date(response.data.time * 1000);
   timeElement.innerHTML = formatDate(date);
 
-  console.log(response.data);
-
   let icon = document.querySelector("#icon");
   icon.innerHTML = `
   <img
@@ -64,7 +62,33 @@ function runSearch(event) {
   searchCity(searchInput.value);
 }
 
+function displayForecast() {
+  let days = ["Mon", "Tues", "Weds", "Thurs", "Fri"];
+  let forecastHtml = "";
+
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      `
+          <div class="weather-forecast-day">
+            <div class="weather-forecast-date">${day}</div>
+            <div class="weather-forecast-icon">☁️</div>
+            <div class="weather-forecast-temperatures">
+              <div class="weather-forecast-temperature-max">
+                <strong>22°</strong>
+              </div>
+              <div class="weather-forecast-temperature-min">16°</div>
+            </div>
+          </div>
+`;
+  });
+
+  let forecastElement = document.querySelector("#forecast");
+  forecastElement.innerHTML = forecastHtml;
+}
+
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", runSearch);
 
 searchCity("London");
+displayForecast();
