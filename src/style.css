@@ -1,5 +1,6 @@
 body {
   background-color: #a2a8d3;
+  opacity: 0.8;
   font-family: "Space Grotesk", sans-serif;
 }
 
@@ -9,7 +10,7 @@ a {
 .weather-app {
   background-color: #e7eaf6;
   max-width: 600px;
-  margin: 40px auto;
+  margin: 50px auto;
   padding: 25px;
   border-radius: 20px;
   box-shadow: 10px 10px 20px rgba(36, 35, 35, 0.2);
@@ -37,6 +38,11 @@ header {
   border-radius: 8px;
   color: #27296d;
   font-size: 15px;
+}
+
+.search-form-button:hover {
+  cursor: pointer;
+  background-color: #b1afff;
 }
 
 main {
