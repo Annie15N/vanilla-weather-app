@@ -1,12 +1,16 @@
 body {
-  background-color: #a2a8d3;
-  opacity: 0.8;
   font-family: "Space Grotesk", sans-serif;
+  background-image: url("background-image.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: 100%;
 }
 
 a {
   color: #a393eb;
 }
+
 .weather-app {
   background-color: #e7eaf6;
   max-width: 600px;
@@ -25,7 +29,7 @@ header {
   background-color: #f2f2f2;
   border: none;
   border-radius: 10px;
-  width: 80%;
+  width: 75%;
   padding: 20px 20px;
   font-size: 15px;
 }
@@ -83,8 +87,8 @@ main {
   margin-left: 8px;
 }
 .weather-app-icon {
-  width: 90px;
-  height: 90px;
+  width: 100px;
+  height: 100px;
 }
 
 .weather-app-unit {
@@ -108,8 +112,8 @@ main {
 }
 
 .weather-forecast-icon {
-  width: 70px;
-  height: 70px;
+  width: 80px;
+  height: 80px;
   display: block;
   margin: 0 auto;
 }
